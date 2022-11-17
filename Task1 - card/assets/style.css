@@ -3,7 +3,6 @@
     width: 400px;
     border: 1px solid black;
     transition: 0.3s;
-    
 }
 
 .card:hover{
@@ -24,6 +23,7 @@
     width: 400px;
     height: 400px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container{
