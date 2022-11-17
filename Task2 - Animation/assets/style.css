@@ -1,0 +1,255 @@
+/* .stick-man{
+    position: absolute;
+}
+.face{
+    background-color: black;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin-left: 200px;
+}
+
+.eyes{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 30px;
+}
+.eye1{
+    margin-left: 25px;
+    animation-name: eyeAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+@keyframes eyeAnim{
+    0%{
+
+    }
+    100%{
+        transform: scaleY(0.1);
+    }
+}
+
+.eye2{
+    margin-left: 70px;
+}
+
+.circle3{
+    position: absolute;
+    border-radius: 50%;
+    border-bottom: 15px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 1px;
+    width: 90px;
+    top: 50px;
+    left: 215px;
+    height: 40px;
+}
+
+.tooth{
+    position: absolute;
+    background-color: black;
+    width: 7px;
+    height: 10px;
+    margin-top: 88px;
+    margin-left: 80px;
+}
+
+.parts{
+    position: absolute;
+}
+
+.body-part{
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 210px;
+}
+
+.arms{
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 70px;
+}
+
+.arm1{
+    margin-bottom: 90px;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+
+.head {
+    background-color: black;
+    width: 60px;
+    height: 72px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 133px;
+    z-index: 1;
+    animation: rock 1s alternate infinite ease-in-out;
+    transform-origin: center bottom;
+}
+
+.eyes{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 30px;
+}
+.eye1{
+    animation-name: eyeAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+    margin-left: 12px;
+}
+
+@keyframes eyeAnim{
+    0%{
+
+    }
+    100%{
+        transform: scaleY(0.1);
+    }
+}
+
+.eye2{
+    margin-left: 40px;
+}
+
+.mouth{
+    position: absolute;
+    border-radius: 50%;
+    border-bottom: 15px solid rgb(255, 0, 0);
+    background: transparent;
+    padding: 1px;
+    width: 30px;
+    top: 32px;
+    left: 15px;
+    height: 35px;
+}
+
+.tooth{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 7px;
+    height: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+@keyframes rock {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.torso {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 156px;
+}
+
+.leg {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 175px;
+}
+
+.leftleg {
+    left: 155px;
+    transform: rotate(12deg);
+    transform-origin: top;
+}
+
+.rightleg {
+    left: 157px;
+    transform: rotate(-12deg);
+    transform-origin: top;
+}
+
+.arm{
+    width: 100px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+}
+
+.leftarm {
+    top: 118px;
+    left: 75px;
+    transform: rotate(-45deg);
+}
+
+.rightarm {
+    top: 86px;
+    left: 161px;
+    animation: wave 1s alternate infinite ease-in-out;
+    transform-origin: 0%;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+.leftfoot {
+    width: 30px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 110px;
+    transform: rotate(8deg);
+}
+
+.rightfoot {
+    width: 30px;
+    height: 6px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 178px;
+    transform: rotate(-8deg);
+}
